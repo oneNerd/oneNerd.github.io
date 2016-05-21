@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Super</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+	<link rel='stylesheet' type='text/css' href='http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css'/>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			var password = "1ncorr1g1bl3";
+			$('button').click(function() {
+				if ($('#main').val() === password) {
+					$('.list-item').addClass('correctPassword')
+				} else {
+					$('div').fadeOut('slow')
+					$('#failPassword').show()
+				}
+			});
+		});
+	</script>
+	<style type="text/css">
+		::-webkit-scrollbar {
+			width: 4px;
+			border-radius: 10px;
+		}
+		::-webkit-scrollbar-track {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+			border-radius: 10px;
+			background: #fff;
+		}
+		::-webkit-scrollbar-thumb {
+			-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5); 
+			border-radius: 10px;
+			background: #757575;
+		}
+		button {
+			color: orange;
+			background-color: black;
+			cursor: pointer;
+		}
+		header {
+			font-size: 100px;
+			margin-left: 100px;
+		}
+		ul li {
+			display: block;
+			padding-top: 25px;
+		}
+		hr {
+			width: 200px;
+			margin-left: -70px;
+		}
+		h2 {
+			font-size: 80px;
+			padding-top: 30px;
+			text-align: center;
+			font-family: Edwardian Script ITC;
+			color: #aa2920;
+		}
+		.jumbodiv1 p, .jumbodiv2 p {
+			font-size: 25px;
+			padding-bottom: 20px;
+			text-align: center;
+			font-family: Informal Roman;
+			color: #aa2920;
+		}
+		a {
+			text-decoration: none;
+			color: #ffff00;
+			font-weight: bold;
+			-webkit-transition:0.5s all ease;
+		}
+		ul{
+			padding: 0;
+		}
+		ul li{
+			display: inline-block;
+			position: relative;
+			padding-left: 20px;
+		}
+		ul li a{
+			padding: 8px 25px;
+		}
+		ul li ul.dropdown{
+			margin-left: -350px;
+			width: 300px;
+			position: absolute;
+			margin-top: -75px;
+			padding: 10px;
+			-webkit-transition:0.5s all ease;
+		}
+		ul li:hover ul.dropdown{
+			display: block;
+			margin-left: -50px;
+			background-color: rgba(0, 0, 0, 0.9);
+			padding: 10px;
+		}
+		ul li ul.dropdown li{
+			display: block;
+			padding-left: 200px;
+			float: right;
+			margin-top: -10px;
+			color: #00ff00;
+			-webkit-transition:0.5s all ease;
+		}
+		input {
+			width: 100px;
+			color: black;
+		}
+		button {
+			padding: 5px 10px 5px 10px;
+		}
+		a:link {
+			color: #ffff00;
+			text-decoration: none;
+			-webkit-transition:0.5s all ease;
+		}
+		a:active {
+			color: #ffff00;
+			text-decoration: none;
+		}
+		a:visited {
+			color: #ffff00;
+			text-decoration: none;
+		}
+		a:hover {
+			color: #ffff00;
+			text-decoration: none;
+			-webkit-transition:0.5s all ease;
+		}
+		.div {
+			color: #FFFFFF;
+			width: 320px;
+			margin-left: -280px;
+			margin-top: -20px;
+			height: 700px;
+			position: fixed;
+			-webkit-transition:0.5s all ease;
+			background-color: rgba(0, 0, 0, 0.5);
+			z-index: 1;
+		}
+		.jumbotron span {
+			font-size: 30px;
+			margin-top: -10px;
+			margin-left: 100px;
+		}
+		.jumbotron {
+			text-align: left;
+			background: url(https://goo.gl/bPMwCf) no-repeat center center;
+			height: 667px;
+			width: 100%;
+			color: #FFFFFF;
+			font-family: high tower text;
+			position: absolute;
+			margin-left: 15px;
+			margin-bottom: -100px;
+			background-attachment: fixed;
+			-webkit-filter: grayscale(60%);
+		}
+		.jumbodiv1 {
+			height: 300px;
+			margin-top: 645px;
+			width: 100%;
+			margin-bottom: -50px;
+		}
+		.jumbodiv1 div, .jumbodiv2 div {
+			margin-top: 13px;
+			margin-left: 13px;
+			width: 98%;
+			border: 8px solid #aa2920;
+		}
+		.jumbodiv2 {
+			height: 300px;
+			width: 100%;
+			margin-top: 645px;
+			margin-bottom: -50px;
+		}
+		.jumbotron2 {
+			text-align: left;
+			background: url(http://goo.gl/pShPK4) no-repeat center center;
+			height: 667px;
+			width: 100%;
+			color: #FFFFFF;
+			font-family: high tower text;
+			position: absolute;
+			margin-bottom: -100px;
+			background-attachment: fixed;
+			-webkit-filter: grayscale(60%);
+		}
+		.jumbotron3 {
+			text-align: left;
+			background: url(http://goo.gl/uMjcX3) no-repeat center center;
+			height: 667px;
+			width: 100%;
+			color: #FFFFFF;
+			font-family: high tower text;
+			position: absolute;
+			margin-bottom: -100px;	
+			background-attachment: fixed;
+			-webkit-filter: grayscale(60%);
+		}
+		.jumbotron2 p {
+			padding-top: 400px;
+		}
+		.p {
+			float: right;
+			padding-right: 10px;
+			margin-left: 200px;
+			font-size: 30px;
+			margin-top: 40px;
+		}
+		.S60 {
+			width: 400px;
+			margin-left: -750px;
+			margin-top: 50px;
+			height: 200px;
+			background-color: rgba(0, 0, 0, 0.5);
+			color: #FFFFFF;
+			border: 14px solid rgba(0, 0, 0, 0.55);
+			font-size: 40px;
+			overflow: hidden;
+		}
+		.S60 p {
+			position :relative;
+			font-size: 30px;
+			animation: animo 30s linear infinite;
+		}
+		.div:hover {
+			margin-left: 0px;
+			background-color: rgba(0, 0, 0, 0.85);
+			-webkit-transition:0.5s all ease;
+		}
+		.S60 p:hover {
+			animation-play-state: paused;
+			cursor: default;
+		}
+		@-webkit-keyframes animo {
+			0%   {top: 200px;}
+			100% {top: -800px;}
+		}
+		.correctPassword {
+			color: #0f0;
+		}
+	</style>
+</head>
+<body>
+	<div class="div">
+		<p class="p">M<br>E<br>N<br>U</p>
+		<ul>
+			<li><a href="#" class="list-item">HOME</a><hr></li><br>
+			<li><a href="#" class="list-item">PARALLAX</a><hr></li><br>
+			<li><a href="#" class="list-item">SCROLL EFFECT</a><hr></li><br>
+			<li><a href="#" class="list-item">GET CODING</a><hr>
+				<ul class="dropdown">
+					<li>Enter Key:</li>
+					<li><input type="password" id="main"></li>
+					<li><button>Continue</button></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<div class="row">
+		<div class="jumbotron col-md-8">
+			<header>Welcome to Super!</header>
+			<span class="col-md-7">The most exhilarating website EVER</span><br>
+			<div class="S60 col-md-6">
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
+		</div>
+	</div><br><br>
+	<div class="jumbodiv1">
+		<div>
+			<h2>Forget what you know about websites</h2>
+			<p>Super offers an interactive platform for all learning web developers for 'observe and learn'-based coding.</p>
+		</div>
+	</div>
+	<div class="jumbotron2">
+		<header><br>This is PARALLAX!!!!</header>
+	</div><br><br>
+	<div class="jumbodiv2">
+		<div>
+			<h2>and enter into a 'Super' world of web developing</h2>
+			<p>Yes, Super is an all-new, state-of-the-art website that can actually change your opinion about what it's all about!</p>
+		</div>
+	</div>
+	<div class="jumbotron3">
+		<header><br>Yup...the scroll<br>effect...</header>
+	</div>
+</body>
+</html>
